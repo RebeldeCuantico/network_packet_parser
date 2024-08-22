@@ -4,10 +4,10 @@ This project provides a Rust library for parsing and analyzing network packets, 
 
 ## Features
 
--Parsing of Ethernet frames
--Parsing of IPv4 headers
--Parsing of TCP headers
--Determination of the required analyzer type based on packet content
+- Parsing of Ethernet frames
+- Parsing of IPv4 headers
+- Parsing of TCP headers
+- Determination of the required analyzer type based on packet content
 
 ## Installation
 
@@ -42,9 +42,9 @@ fn main() {
 ## Supported Packet Types
 The library can parse the following types of packets:
 
--Ethernet frames
--IPv4 packets
--TCP segments (encapsulated in IPv4)
+- Ethernet frames
+- IPv4 packets
+- TCP segments (encapsulated in IPv4)
 
 ## API Documentation
 
