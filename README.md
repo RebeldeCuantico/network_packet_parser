@@ -4,9 +4,10 @@ This project provides a Rust library for parsing and analyzing network packets, 
 
 ## Features
 
-- Parsing of Ethernet frames
-- Parsing of IPv4 headers
-- Determination of the required analyzer type based on packet content
+-Parsing of Ethernet frames
+-Parsing of IPv4 headers
+-Parsing of TCP headers
+-Determination of the required analyzer type based on packet content
 
 ## Installation
 
@@ -38,6 +39,12 @@ fn main() {
     println!("Recommended analyzer: {}", analyzer);
 }
 ```
+## Supported Packet Types
+The library can parse the following types of packets:
+
+-Ethernet frames
+-IPv4 packets
+-TCP segments (encapsulated in IPv4)
 
 ## API Documentation
 
@@ -53,7 +60,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to all contributors who have helped with this project.
 - Inspired by the need for a simple, educational network packet parsing tool.
 
 ## Contact
